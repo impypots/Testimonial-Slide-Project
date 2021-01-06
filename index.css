@@ -1,0 +1,44 @@
+body {
+    
+}
+
+#container {
+    display: flex;
+}
+
+#container div {
+    display: none;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    margin: 25vh 25vw;
+    color: rgba(0,0,0,0);
+    transition: color 0.5s;
+    transform: translateX(50px);
+}
+
+.displayOn {
+    display: block;
+}
+
+.displayOff {
+    display: none;
+}
+
+@keyframes examplecoming {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes examplegoing {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-50px);
+    }
+}
